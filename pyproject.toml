@@ -1,0 +1,29 @@
+[project]
+name = "AuthSystem"
+version = "0.1.0"
+description = "AuthSystem for FastAPI"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "fastapi>=0.115.12",
+    "passlib[bcrypt]>=1.7.4",
+    "phonenumbers>=9.0.3",
+    "pydantic[email]>=2.11.3",
+    "pydantic-extra-types>=2.10.3",
+    "pydantic-settings>=2.9.1",
+    "python-jose>=3.4.0",
+    "sqlalchemy>=2.0.40",
+    "uvicorn>=0.34.2",
+    "bcrypt==4.0.1",
+    "python-multipart>=0.0.20",
+    "alembic>=1.15.2",
+    "requests>=2.32.3",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+]
